@@ -1,0 +1,29 @@
+<div class="vertical-center-full-height">
+
+    <h2>Traditional For Directive</h2>
+
+    <ul style="list-style-type:circle">
+
+        <li *ngFor="let item of testItems; let i = index">
+
+            {{i+1}} - {{item}}
+
+        </li>
+    </ul>
+
+    <br><br>
+    <h2> New For directive</h2>
+
+    <ul style="list-style-type:disc">
+
+        @for (item of testItems; track item ; let index = $index) {
+        <li>
+
+            {{ index + 1 }} - {{ item }}
+
+        </li>
+        }
+
+    </ul>
+
+</div>
